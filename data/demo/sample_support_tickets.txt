@@ -1,0 +1,84 @@
+=== SUPPORT TICKET LOG - ACME CORPORATION ===
+
+TICKET: SUP-2847
+Date: June 12, 2025
+Severity: CRITICAL
+Subject: Salesforce Integration Data Sync Failure
+Description: Salesforce integration stopped syncing customer records 3 days ago. Manual sync attempts return 500 errors. Engineering team cannot access updated customer data, blocking daily operations for 15 team members.
+Status: OPEN (12 days)
+Assigned: Unassigned
+Customer Comment: "This has been open for almost two weeks. We need this resolved IMMEDIATELY or we will need to find an alternative solution."
+
+---
+
+TICKET: SUP-2851
+Date: June 14, 2025
+Severity: CRITICAL
+Subject: Data Export Missing Required Fields
+Description: CSV export from analytics dashboard is missing 4 critical fields: customer_segment, revenue_impact, lifecycle_stage, and engagement_score. These fields are essential for our quarterly reporting. Export template hasn't been updated since onboarding.
+Status: OPEN (10 days)
+Assigned: Backend Team
+Customer Comment: "Our quarterly report deadline is approaching. We need these fields urgently."
+
+---
+
+TICKET: SUP-2855
+Date: June 16, 2025
+Severity: HIGH
+Subject: SSO Authentication Timeout Issues
+Description: Users experiencing intermittent SSO login failures. Approximately 30% of login attempts timeout after 60 seconds. Users forced to use backup password authentication. Issue started after platform update on June 10.
+Status: IN PROGRESS
+Assigned: Authentication Team
+Customer Comment: "Very frustrating for our team. Multiple users have given up trying to log in."
+
+---
+
+TICKET: SUP-2840
+Date: June 8, 2025
+Severity: HIGH
+Subject: REST API Rate Limiting Too Aggressive
+Description: API rate limits are causing failures in our automated workflows. Current limit of 100 req/min is insufficient for our batch processing needs. Requested increase to 500 req/min during initial setup call but never implemented.
+Status: OPEN (16 days)
+Assigned: API Team
+Customer Comment: "This was promised during onboarding. Still waiting."
+
+---
+
+TICKET: SUP-2860
+Date: June 18, 2025
+Severity: MEDIUM
+Subject: Dashboard Loading Performance Degradation
+Description: Analytics dashboard taking 15-25 seconds to load, up from 3-5 seconds last month. Users reporting timeouts when applying complex filters. Performance issues making the analytics feature unusable for real-time monitoring.
+Status: IN PROGRESS
+Assigned: Frontend Team
+
+---
+
+TICKET: SUP-2862
+Date: June 19, 2025
+Severity: MEDIUM
+Subject: Training Materials Outdated
+Description: Onboarding documentation references features and UI elements that no longer exist or have been renamed. New team members are confused and unable to self-serve. Requested updated documentation 6 weeks ago.
+Status: OPEN (5 days)
+Assigned: Documentation Team
+
+---
+
+TICKET: SUP-2858
+Date: June 17, 2025
+Severity: HIGH
+Subject: Webhook Delivery Failures
+Description: Webhook notifications for workflow triggers failing silently. No error logs available. Customer discovered missing notifications only after manual audit. Approximately 200+ notifications missed in last 2 weeks.
+Status: OPEN (7 days)
+Assigned: Integration Team
+Customer Comment: "Silent failures are the worst kind. We can't trust the system if we don't know when things break."
+
+---
+
+TICKET: SUP-2865
+Date: June 20, 2025
+Severity: LOW
+Subject: Feature Request - Bulk User Management
+Description: Currently can only add/remove users one at a time. Need bulk CSV import for user management. Team of 45+ users makes individual management impractical.
+Status: OPEN (4 days)
+Assigned: Product Team

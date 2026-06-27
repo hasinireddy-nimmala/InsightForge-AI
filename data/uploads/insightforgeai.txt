@@ -1,0 +1,6 @@
+Customer: ABC Ltd
+
+The customer is unhappy with support response time.
+Usage has dropped by 30%.
+Renewal is due next month.
+Customer requested a meeting.

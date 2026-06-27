@@ -1,0 +1,81 @@
+=== CUSTOMER MEETING NOTES ===
+Account: Acme Corporation
+Date: June 15, 2025
+Type: Quarterly Business Review
+Attendees:
+- Sarah Chen, VP of Operations (Acme)
+- Michael Rodriguez, IT Director (Acme)
+- Jennifer Park, Account Manager (Our Team)
+- David Kim, Customer Success Manager (Our Team)
+
+---
+
+MEETING SUMMARY:
+
+The quarterly business review with Acme Corporation revealed significant concerns about the platform onboarding experience and declining user adoption. The meeting tone was notably tense, with Sarah Chen expressing frustration about the lack of executive-level engagement from our side.
+
+KEY DISCUSSION POINTS:
+
+1. ONBOARDING EXPERIENCE (Critical Issue)
+Sarah Chen opened by stating that the onboarding process has been "extremely disappointing." She noted that their engineering team of 45 users has struggled with the platform since day one. Key complaints include:
+- Training sessions were too generic and didn't address their specific workflows
+- Documentation is outdated and doesn't cover their integration requirements  
+- The self-service onboarding guide was confusing and led to multiple configuration errors
+- Three team members have completely stopped using the platform
+
+"We expected a much smoother transition. Our team is spending more time troubleshooting than actually being productive." - Sarah Chen
+
+2. USAGE METRICS (Declining)
+Michael Rodriguez shared internal usage data showing:
+- Active daily users dropped from 38 to 24 (37% decline) over the past quarter
+- Feature adoption rate is at only 28% (vs. 75% target)
+- Average session duration decreased from 45 minutes to 18 minutes
+- API call volume down 42% month-over-month
+
+"The numbers speak for themselves. If this trend continues, it will be hard to justify the renewal." - Michael Rodriguez
+
+3. SUPPORT EXPERIENCE (Deteriorating)
+- Support ticket volume increased 62% in the last 30 days
+- Average first response time: 18 hours (SLA: 4 hours)
+- Two critical tickets have been open for 12+ days without resolution
+- Michael mentioned they had to find workarounds on their own for 3 separate issues
+- The team feels "abandoned" after initial sale
+
+4. RENEWAL CONCERNS (Urgent)
+- Contract renewal date: August 1, 2025 (45 days away)
+- Sarah explicitly mentioned they are evaluating two competitor platforms
+- Budget approval for renewal needs VP sign-off, which Sarah controls
+- Current contract value: $180,000/year
+- They will not renew without significant improvements
+
+5. INTEGRATION CHALLENGES
+- Salesforce integration still not fully functional after 3 months
+- REST API documentation has errors that caused development delays
+- SSO implementation took 6 weeks instead of promised 1 week
+- Data export functionality is missing key fields they need
+
+6. POSITIVE NOTES
+- Users who have adopted the platform report 20% productivity gains
+- Analytics dashboard is well-received by management
+- Mobile app performance improved after last update
+
+ACTION ITEMS:
+- [URGENT] Schedule executive sponsor meeting within 1 week
+- [URGENT] Resolve the 2 critical open support tickets within 48 hours
+- Assign dedicated Customer Success Manager for weekly check-ins
+- Provide customized training sessions for the engineering team
+- Fix Salesforce integration issues
+- Share updated API documentation
+
+FOLLOW-UP:
+Next meeting scheduled for July 1, 2025
+Sarah requested a formal improvement plan before the next meeting
+
+RISK ASSESSMENT: HIGH
+- Churn probability: Very High
+- Revenue at risk: $180,000 ARR
+- Expansion potential if issues resolved: $50,000+ additional
+
+---
+Notes prepared by: Jennifer Park, Account Manager
+Distribution: Leadership Team, Customer Success, Engineering Support

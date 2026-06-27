@@ -1,0 +1,32 @@
+date,metric,value,notes
+2025-01-15,active_users,42,Baseline after onboarding
+2025-02-15,active_users,40,Slight decline noted
+2025-03-15,active_users,38,Two users disengaged
+2025-04-15,active_users,32,Integration issues reported
+2025-05-15,active_users,27,Support frustrations growing
+2025-06-15,active_users,24,QBR meeting - concerns raised
+2025-01-15,nps_score,45,Initial satisfaction moderate
+2025-02-15,nps_score,38,Declining after onboarding issues
+2025-03-15,nps_score,30,Support response times criticized
+2025-04-15,nps_score,22,Integration failures impacting score
+2025-05-15,nps_score,15,Customer considering alternatives
+2025-06-15,nps_score,8,Critical low - churn risk
+2025-01-15,support_tickets,5,Normal volume
+2025-02-15,support_tickets,8,Slight increase
+2025-03-15,support_tickets,12,Integration-related tickets
+2025-04-15,support_tickets,18,Growing frustration
+2025-05-15,support_tickets,24,Volume spike
+2025-06-15,support_tickets,31,Critical - 62% increase
+2025-01-15,feature_adoption_pct,35,Early adoption phase
+2025-03-15,feature_adoption_pct,32,Stalled adoption
+2025-05-15,feature_adoption_pct,28,Declining adoption
+2025-06-15,feature_adoption_pct,28,No improvement
+2025-01-15,login_frequency_daily,38,Good initial engagement
+2025-03-15,login_frequency_daily,30,Declining logins
+2025-05-15,login_frequency_daily,22,Significant drop
+2025-06-15,login_frequency_daily,18,Alarming decline
+2025-06-15,contract_value_usd,180000,Annual contract
+2025-06-15,renewal_date,2025-08-01,45 days away
+2025-06-15,last_exec_contact,2025-04-01,76 days ago
+2025-06-15,open_support_tickets,8,4 critical
+2025-06-15,avg_resolution_hours,42,SLA is 8 hours

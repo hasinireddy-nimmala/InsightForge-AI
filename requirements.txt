@@ -1,0 +1,32 @@
+# InsightForge AI - Dependencies
+# Core Framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+python-dotenv>=1.0.0
+python-multipart>=0.0.18
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+
+# AI/ML
+google-generativeai>=0.8.0
+sentence-transformers>=3.3.0
+faiss-cpu>=1.9.0
+
+# LangGraph
+langgraph>=0.2.50
+langchain-core>=0.3.20
+
+# Database
+aiosqlite>=0.20.0
+
+# Document Processing
+PyPDF2>=3.0.0
+docx2txt>=0.8
+
+# Frontend
+streamlit>=1.40.0
+plotly>=5.24.0
+requests>=2.32.0
+
+# Utilities
+numpy>=1.24.0
