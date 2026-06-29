@@ -23,7 +23,29 @@ async def planner_agent(state: AgentState) -> dict:
         # Create plan
         plan_result = await llm.generate_json(
             f"Analyze this customer interaction and create an execution plan:\n\n{state.get('input_text', '')[:2000]}",
-            system_prompt="You are a strategic planner. Create a JSON execution plan with key 'plan' containing a list of analysis steps."
+            # system_prompt="You are a strategic planner. Create a JSON execution plan with key 'plan' containing a list of analysis steps."
+                                system_prompt="""
+                    You are a strategic planner.
+
+                    Return ONLY valid JSON.
+
+                    The response must exactly follow this format:
+
+                    {
+                    "plan": [
+                        "retrieve_context",
+                        "analyze_business",
+                        "detect_risks",
+                        "find_opportunities",
+                        "recommend_actions",
+                        "explain_reasoning"
+                    ]
+                    }
+
+                    Do NOT return objects.
+                    Do NOT use {"step":"..."}.
+                    Each item in plan must be a plain string.
+                    """
         )
         
         plan = plan_result.get('plan', [
