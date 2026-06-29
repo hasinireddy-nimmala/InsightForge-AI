@@ -16,6 +16,10 @@
 
 ---
 
+<img width="776" height="374" alt="image" src="https://github.com/user-attachments/assets/f4006c1a-0e83-4da5-99a9-07902eb41e32" />
+
+
+
 ## 🎯 The Problem
 
 Customer Success teams are **drowning in signals** — meeting notes, CRM exports, support tickets, usage telemetry — but lack the tools to synthesize them into **actionable intelligence** in real time. Traditional dashboards show *what happened*; InsightForge AI tells you *what to do next and why*.
