@@ -39,17 +39,46 @@ class LLMService:
     async def generate_json(self, prompt: str, system_prompt: str = "") -> dict:
         if not self.is_configured:
             return self._demo_json_response(prompt)
-        try:
-            json_prompt = f"{system_prompt}\n\nRespond ONLY with valid JSON. No markdown.\n\n{prompt}"
-            response = await asyncio.to_thread(self._model.generate_content, json_prompt)
-            text = response.text.strip()
-            if text.startswith('```'):
-                text = text.split('\n', 1)[1] if '\n' in text else text[3:]
-                text = text.rsplit('```', 1)[0]
-            return json.loads(text)
-        except Exception as e:
-            logger.error(f"LLM JSON error: {e}")
-            return self._demo_json_response(prompt)
+
+        json_prompt = (
+            f"{system_prompt}\n\n"
+            f"Respond ONLY with valid JSON. No markdown.\n\n"
+            f"{prompt}"
+        )
+
+        for attempt in range(3):
+            try:
+                response = await asyncio.to_thread(
+                    self._model.generate_content,
+                    json_prompt
+                )
+
+                text = response.text.strip()
+
+                if text.startswith("```"):
+                    text = text.split("\n", 1)[1]
+                    text = text.rsplit("```", 1)[0]
+
+                return json.loads(text)
+
+            except Exception as e:
+                error = str(e)
+
+                if "429" in error:
+                    wait_time = (attempt + 1) * 10
+
+                    logger.warning(
+                        f"Gemini rate limit reached. Waiting {wait_time} seconds..."
+                    )
+
+                    await asyncio.sleep(wait_time)
+                    continue
+
+                logger.error(f"LLM JSON error: {e}")
+                break
+
+        logger.warning("Using demo response after retries failed.")
+        return self._demo_json_response(prompt)
 
     def _demo_response(self, prompt: str) -> str:
         return "Customer is experiencing significant onboarding challenges with declining platform adoption. Urgent executive intervention needed before 45-day renewal deadline."
